@@ -17,8 +17,12 @@ parts:
     plugin: autotools
     source: .
     stage-packages:
-      - python3
       - lxc
-      - python3-gbinder
       - python3-gi
       - gir1.2-gtk-3.0
+    python-packages:
+      - gbinder-python
+    
+  python3-gbinder:
+    plugin: python
+    source: https://github.com/erfanoabdi/gbinder-python
